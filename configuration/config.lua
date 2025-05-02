@@ -3,7 +3,7 @@ Config = {}
 Config.CheckForUpdates = true --| Check for updates?
 Config.DrawDistance = 20 --| Distance in units to see ped
 Config.Cooldown = 3 --| In seconds
-Config.Account = 'black_money' --| Used account to pay/sell
+Config.Account = 'money' --| Used account to pay/sell
 Config.IconColor  = 'rgba(173, 216, 230, 1)' --| rgba format | Default
 Config.UseOxTarget = false
 Config.InteractDistance = 2
@@ -53,11 +53,11 @@ Config.Locations = {
 
         content = { --| Your item data
             {
-                label = 'AK47 Weed Seed',
-                item = 'weed_lemonhaze_seed',
+                label = 'Drug Scales Low',
+                item = 'drug_scales_low',
                 option = {
-                    buy = 200,
-                    sell = 100
+                    buy = 250,
+                    sell = 150
                 },
 
                 icon = {
@@ -66,7 +66,20 @@ Config.Locations = {
                 },
             },
             {
-                label = 'OGKush Weed Seed',
+                label = 'Drug Scales High',
+                item = 'drug_scales_high',
+                option = {
+                    buy = 350,
+                    sell = 250
+                },
+
+                icon = {
+                    type = 'fa-solid fa-cannabis', --| https://fontawesome.com/search?q=coding&o=r&m=free
+                    color = 'rgba(173, 216, 230, 1)' --| rgba format
+                },
+            },
+            {
+                label = 'OGKush Seed',
                 item = 'weed_og_seed',
                 option = {
                     buy = 250,
@@ -79,7 +92,20 @@ Config.Locations = {
                 },
             },
             {
-                label = 'Purple Haze Weed Seed',
+                label = 'Skunk Seed',
+                item = 'weed_lemonhaze_seed',
+                option = {
+                    buy = 200,
+                    sell = 100
+                },
+
+                icon = {
+                    type = 'fa-solid fa-cannabis', --| https://fontawesome.com/search?q=coding&o=r&m=free
+                    color = 'rgba(173, 216, 230, 1)' --| rgba format
+                },
+            },
+            {
+                label = 'Purple Haze Seed',
                 item = 'weed_purple_haze_seed',
                 option = {
                     buy = 300,
@@ -92,11 +118,63 @@ Config.Locations = {
                 },
             },
             {
-                label = 'Skunk Weed Seed',
+                label = 'White Widow Seed',
                 item = 'weed_white_widow_seed',
                 option = {
                     buy = 400,
                     sell = 200
+                },
+
+                icon = {
+                    type = 'fa-solid fa-cannabis', --| https://fontawesome.com/search?q=coding&o=r&m=free
+                    color = 'rgba(173, 216, 230, 1)' --| rgba format
+                },
+            },
+            {
+                label = 'Oz Jar OGKush',
+                item = 'ozjar_ogk',
+                option = {
+                    buy = false,
+                    sell = 425
+                },
+
+                icon = {
+                    type = 'fa-solid fa-cannabis', --| https://fontawesome.com/search?q=coding&o=r&m=free
+                    color = 'rgba(173, 216, 230, 1)' --| rgba format
+                },
+            },
+            {
+                label = 'Oz Jar Skunk',
+                item = 'ozjar_sk',
+                option = {
+                    buy = false,
+                    sell = 475
+                },
+
+                icon = {
+                    type = 'fa-solid fa-cannabis', --| https://fontawesome.com/search?q=coding&o=r&m=free
+                    color = 'rgba(173, 216, 230, 1)' --| rgba format
+                },
+            },
+            {
+                label = 'Purple Haze Seed',
+                item = 'weed_purple_haze_seed',
+                option = {
+                    buy = false,
+                    sell = 575
+                },
+
+                icon = {
+                    type = 'fa-solid fa-cannabis', --| https://fontawesome.com/search?q=coding&o=r&m=free
+                    color = 'rgba(173, 216, 230, 1)' --| rgba format
+                },
+            },
+            {
+                label = 'Oz Jar White Widow',
+                item = 'ozjar_ww',
+                option = {
+                    buy = false,
+                    sell = 675
                 },
 
                 icon = {
